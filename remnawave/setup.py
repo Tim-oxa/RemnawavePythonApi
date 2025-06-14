@@ -15,4 +15,7 @@ setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
     ],
+    project_urls={
+      "GitHub": "Tim-oxa"
+    },
 )
