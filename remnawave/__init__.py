@@ -9,6 +9,10 @@ class Remnawave:
             "Content-Type": "application/json",
             "Authorization": "Bearer " + token
         })
+        
+        if panel_url.startswith("http://"):
+            self.client.headers["X-Forwarded-Proto"] = "https"
+            self.client.headers["X-Forwarded-For"] = "127.0.0.1"
 
     async def _get(self, url: str):
         r = await self.client.get(self.panel_url + url)
