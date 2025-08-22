@@ -1,5 +1,10 @@
-# remnawave
+# Remnawave Python Api
 A client library for accessing Remnawave API v2.1.3
+
+## Installation
+```
+pip install git+https://github.com/Tim-oxa/RemnawavePythonApi.git
+```
 
 ## Usage
 First, create a client:
